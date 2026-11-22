@@ -1,0 +1,32 @@
+[project]
+name = "mcp-multi-agent-platform"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dipak Kore", email = "dipakkore06@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.32.0",
+    "fastapi>=0.165.0",
+    "fastmcp>=4.2.4",
+    "langchain>=1.5.2",
+    "langchain-groq>=1.2.1",
+    "langchain-mcp-adapters>=0.3.1",
+    "langgraph>=1.2.24",
+    "mcp>=2.3.0",
+    "pydantic-settings>=2.16.3",
+    "python-dotenv>=1.2.4",
+    "redis>=8.1.0",
+    "sqlalchemy>=2.1.9",
+    "structlog>=26.1.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+mcp-multi-agent-platform = "mcp_multi_agent_platform:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
